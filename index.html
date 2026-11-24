@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>VENTOR Column Meta-ads</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Jost:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F2EC;--fg:#1C1C1C;--zacht:#5E5853;--lijn:#DDD3C4;--corten:#8A4B2A;--kaart:#fff;--tel:#111}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 Inter,system-ui,sans-serif;padding:32px max(16px,env(safe-area-inset-right)) 80px max(16px,env(safe-area-inset-left))}
+.wrap{max-width:1280px;margin:0 auto}
+h1,h2{font-family:Jost,system-ui,sans-serif;font-weight:500;line-height:1.15}
+h1{font-size:clamp(28px,4vw,40px)}
+h2{font-size:26px;margin:48px 0 6px}
+.lead{color:var(--zacht);max-width:68ch;margin-top:8px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.links a{border:1px solid var(--lijn);border-radius:4px;padding:8px 14px;text-decoration:none;font-weight:600;background:var(--kaart);color:var(--corten)}
+.tabs{display:flex;gap:8px;margin:20px 0 4px;flex-wrap:wrap}
+.tabs button{font:inherit;font-weight:600;border:1px solid var(--lijn);background:var(--kaart);border-radius:999px;padding:8px 16px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--fg);color:#fff;border-color:var(--fg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px;margin-top:20px}
+.ad{min-width:0}
+.tel{background:var(--tel);border-radius:34px;padding:10px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.scherm{background:#fff;border-radius:26px;overflow:hidden;color:#111;font-size:13px}
+.kop{display:flex;align-items:center;gap:8px;padding:10px 12px}
+.kop .av{width:30px;height:30px;border-radius:50%;background:#1C1C1C url('https://ventorfire.com/cdn/shop/files/Ventor_brand_logo_RGB.jpg?width=120') center/80% no-repeat;filter:invert(1)}
+.kop b{display:block;font-size:13px}.kop small{color:#777;font-size:11.5px}
+.tekst{margin:0 12px 8px;font-size:13px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.media{display:block;width:100%;border:0;padding:0;background:#000;cursor:zoom-in;position:relative}
+.media img,.media video{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#F3F3F3}
+.cta span{font-size:12.5px;line-height:1.3}.cta b{display:block;font-size:13.5px}
+.cta em{font-style:normal;font-weight:600;background:#E4E6EB;border-radius:6px;padding:7px 12px;white-space:nowrap;font-size:13px}
+.story .scherm{background:#000;position:relative}
+.story .media img,.story .media video{aspect-ratio:9/16}
+.story .bovenbalk{position:absolute;left:10px;right:10px;top:10px;z-index:2;color:#fff;display:flex;align-items:center;gap:8px;font-size:12.5px;pointer-events:none}
+.story .bovenbalk .av{filter:none;background-color:#fff}
+.story .onderbalk{position:absolute;left:0;right:0;bottom:12px;z-index:2;display:flex;justify-content:center;pointer-events:none}
+.story .onderbalk em{font-style:normal;background:#fff;color:#111;font-weight:600;border-radius:999px;padding:8px 18px;font-size:13px}
+.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:72px;height:72px;border-radius:50%;background:rgba(14,12,11,.62);display:flex;align-items:center;justify-content:center;pointer-events:none}
+.play svg{width:34px;height:34px;margin-left:5px;fill:#fff}
+.onder{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:10px}
+.onder strong{font-family:Jost,sans-serif;font-weight:500;font-size:18px}
+.uitleg-knop{font:inherit;font-weight:600;font-size:14px;border:1px solid var(--corten);color:var(--corten);background:transparent;border-radius:4px;padding:6px 12px;cursor:pointer}
+.uitleg{display:none;margin-top:10px;background:var(--kaart);border:1px solid var(--lijn);border-radius:6px;padding:14px;font-size:14.5px;color:var(--zacht)}
+.uitleg.open{display:block}
+.uitleg b{color:var(--fg)}
+.uitleg p+p{margin-top:8px}
+[hidden]{display:none!important}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(10,8,7,.95);display:flex;align-items:center;justify-content:center;padding:56px 16px 24px}
+.lb img,.lb video{max-width:100%;max-height:100%;border-radius:6px}
+.lb .x{position:absolute;top:12px;right:12px;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.15);color:#fff;font-size:28px;cursor:pointer}
+.tabel{overflow-x:auto;margin-top:14px}
+table{border-collapse:collapse;width:100%;min-width:560px;background:var(--kaart);font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--lijn);vertical-align:top}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>VENTOR® Column: Meta-ads Black Friday</h1>
+  <p class="lead">8 beeldads (feed 4:5 en story 9:16) en 3 video's. Klik op een advertentie om hem groot te zien, video's spelen dan met geluid. Bij elke ad legt "Uitleg" uit waarom hij zo is gemaakt. In de ads staat geen prijs, alleen de korting: −€400 + gratis verzending.</p>
+  <div class="links">
+    <a href="https://ventorfire.com/products/ventor-column-cortenstalen-buitenhaard">Live Column-pagina</a>
+    <a href="https://ventorfire.com/products/ventor-original-cortenstaal-220cm">Live Original-pagina</a>
+  </div>
+
+  <h2>Video's</h2>
+  <p class="lead">De complete productvideo met de oprichter draait al live. Daarnaast zijn er twee korte Black Friday-video's.</p>
+  <div class="grid" id="videos"></div>
+
+  <h2>Beeldads</h2>
+  <div class="tabs" role="group" aria-label="Formaat">
+    <button type="button" data-fmt="fd" aria-pressed="true">Feed (4:5)</button>
+    <button type="button" data-fmt="st" aria-pressed="false">Story (9:16)</button>
+  </div>
+  <div class="grid" id="beelden"></div>
+
+  <h2>Opzet campagne</h2>
+  <p class="lead">Bij de Original verkochten in november vooral de video met de oprichter en de ad met het aanbod. Sfeer-ads kregen goedkope kliks, maar weinig aankopen. Daarom staan de productvideo en het aanbod voorop.</p>
+  <div class="tabel"><table>
+    <thead><tr><th>Advertentieset (ABO)</th><th>Doelgroep</th><th>Advertenties</th></tr></thead>
+    <tbody>
+      <tr><td>Column: productvideo (loopt al)</td><td>Zoals nu</td><td>Productvideo (V1)</td></tr>
+      <tr><td>Column: retargeting</td><td>Sitebezoekers en videokijkers 180 dagen, IG-volgers</td><td>A05, A06, V2, V3</td></tr>
+      <tr><td>Column: breed</td><td>NL, 35-65, Advantage+ doelgroep</td><td>A01, A02, A03, A04, A07, A08, V2</td></tr>
+    </tbody>
+  </table></div>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Groot bekijken">
+  <button class="x" type="button" id="lbX" aria-label="Sluiten">×</button>
+  <div id="lbIn" style="display:flex;align-items:center;justify-content:center;width:100%;height:100%"></div>
+</div>
+
+<script>
+var LINK='ventorfire.com';
+var VIDS=[
+ {id:'V1',f:'ventor-column-productvideo',naam:'Productvideo met de oprichter (55 s)',tekst:'Greg, oprichter van VENTOR®, laat de nieuwe Column zien: slank cortenstaal, 190 cm, het vuur verhoogd. Alleen met Black Friday: €400 korting + gratis verzending.',kop:'Nieuw: de VENTOR® Column',knop:'Nu kopen',
+  uitleg:['<b>Waarom:</b> dit is de video die al live draait. Bij de Original verkocht de video met de oprichter het best (2 aankopen, €4.961 omzet).','<b>Hoe gemaakt:</b> de originele video, alleen lichter gemaakt (720p) zodat hij soepel laadt.','<b>Hook:</b> de oprichter in beeld bij het product; echt, niet gespeeld.']},
+ {id:'V2',f:'ventor-column-bf-sfeer',naam:'Sfeer + aanbod (10 s)',tekst:'Van blauw uur tot dakterras: de VENTOR® Column past in elke tuin. Alleen met Black Friday: €400 korting + gratis verzending. T/m 30 november.',kop:'Black Friday: €400 korting',knop:'Nu kopen',
+  uitleg:['<b>Waarom:</b> laat in 10 seconden zien dat de Column overal past (terras, tuin, dakterras) en eindigt op het product met de korting.','<b>Hoe gemaakt:</b> de 4 gekozen sfeerbeelden (23, 24, 37, 05) met langzame zoom, daarna de packshot. Black Friday-balk onderin, muziek uit de bestaande VENTOR-video’s.','<b>Hook:</b> beweging en vuur in de eerste seconde.']},
+ {id:'V3',f:'ventor-column-bf-founder-kort',naam:'Oprichter kort (9 s)',tekst:'"Ik ben Greg, oprichter van VENTOR®." Maak kennis met de nieuwe Column. Alleen met Black Friday: €400 korting + gratis verzending.',kop:'Nieuw: de VENTOR® Column',knop:'Meer info',
+  uitleg:['<b>Waarom:</b> korte versie van de best verkopende soort video, voor retargeting en Reels.','<b>Hoe gemaakt:</b> de eerste 6 seconden van de productvideo, daarna de packshot. De Black Friday-balk staat bovenin, zodat de ondertiteling vrij blijft.','<b>Hook:</b> de oprichter stelt zich voor.']}
+];
+var ADS=[
+ {id:'A01',naam:'Nieuw',tekst:'Nieuw van VENTOR®: de Column. Een slanke buitenhaard van cortenstaal, 190 cm hoog, met het vuur verhoogd. Alleen met Black Friday: €400 korting + gratis verzending.',kop:'Nieuw: −€400 met Black Friday',knop:'Nu kopen',uitleg:['<b>Waarom:</b> introduceert het nieuwe product, met het aanbod direct in beeld.','<b>Beeld:</b> sfeerbeeld 23, terras bij blauw uur, de haard vrij op het terras.','<b>Hook:</b> "Nieuw" werkt bij bestaande volgers en sitebezoekers van de Original.']},
+ {id:'A02',naam:'Kleinere tuin',tekst:'Geen plek voor een haard van 2,2 meter? De VENTOR® Column is maar 40 cm breed. Alleen met Black Friday: €400 korting + gratis verzending.',kop:'Slank vuur, nu −€400',knop:'Meer info',uitleg:['<b>Waarom:</b> neemt het bezwaar "te groot voor mijn tuin" weg.','<b>Beeld:</b> sfeerbeeld 24, grindterras met berken.','<b>Hook:</b> kleinere tuin, een herkenbare situatie voor veel Nederlanders.']},
+ {id:'A03',naam:'Zithoogte',tekst:'Bij een vuurkorf kijk je naar beneden. Bij de VENTOR® Column begint het vuur op 50 cm, dus vanaf je loungestoel kijk je zo in de vlammen. −€400 + gratis verzending.',kop:'Vuur op zithoogte · −€400',knop:'Nu kopen',uitleg:['<b>Waarom:</b> het verschil met een vuurkorf, het belangrijkste voordeel.','<b>Beeld:</b> sfeerbeeld 37, zomeravond met gazon.','<b>Hook:</b> uit de best scorende Original-ad "vuur op ooghoogte", vertaald naar de Column.']},
+ {id:'A04',naam:'Dakterras',tekst:'Een voet van 62 cm en toch een echt houtvuur. De VENTOR® Column past zelfs op je dakterras. Alleen met Black Friday: €400 korting.',kop:'Past overal · −€400',knop:'Meer info',uitleg:['<b>Waarom:</b> laat zien dat hij op kleine plekken past.','<b>Beeld:</b> sfeerbeeld 05, dakterras bij zonsondergang.','<b>Let op:</b> stook alleen in de open lucht en volg de regels van je gemeente of VvE.']},
+ {id:'A05',naam:'Aanbod',tekst:'Black Friday bij VENTOR®: de nieuwe Column met €400 korting, en de verzending is gratis. Alleen t/m 30 november.',kop:'Black Friday: €400 korting',knop:'Nu kopen',uitleg:['<b>Waarom:</b> de aanbod-ad (c10) was bij de Original de tweede beste verkoper.','<b>Beeld:</b> de officiële packshot op crème.','<b>Hook:</b> het bedrag zelf; voor wie al twijfelt.']},
+ {id:'A06',naam:'Twee broers',tekst:'De Original (220 cm) of de nieuwe Column (190 cm)? Allebei van cortenstaal, uit dezelfde werkplaats. Met Black Friday allebei met korting.',kop:'Column −€400 · Original −25%',knop:'Meer info',uitleg:['<b>Waarom:</b> crosssell. Wie de Original te groot vindt, ziet de Column, en andersom.','<b>Beeld:</b> echte foto van de twee naast elkaar.','<b>Hook:</b> keuzevraag, zet aan tot vergelijken.']},
+ {id:'A07',naam:'Patina',tekst:'Je Column komt staalgrijs aan en krijgt vanzelf een warme roestkleur. Schilderen hoeft nooit. Alleen met Black Friday: €400 korting.',kop:'Mooier met de jaren · −€400',knop:'Meer info',uitleg:['<b>Waarom:</b> beantwoordt "roest hij niet weg?" en laat het materiaal zien.','<b>Beeld:</b> de officiële patina-reeks van VENTOR.','<b>Hook:</b> ontwerp en onderhoudsvrij.']},
+ {id:'A08',naam:'Gratis bezorgd',tekst:'De VENTOR® Column komt compleet bij je aan: uitpakken, neerzetten, hout erin en aansteken. Verzending in Nederland is gratis. −€400 t/m 30 november.',kop:'Gratis bezorgd · −€400',knop:'Nu kopen',uitleg:['<b>Waarom:</b> haalt de drempel "hoe krijg ik hem thuis" weg.','<b>Beeld:</b> sfeerbeeld 24, andere uitsnede dan A02.','<b>Hook:</b> gratis verzending staat op de productpagina (ventorfire.com).']}
+];
+var fmt='fd';
+function kop(){return '<div class="kop"><span class="av"></span><span><b>VENTOR®</b><small>Gesponsord</small></span></div>'}
+function cta(k,b){return '<div class="cta"><span>'+LINK.toUpperCase()+'<b>'+k+'</b></span><em>'+b+'</em></div>'}
+function uitleg(u,id){return '<button class="uitleg-knop" type="button" aria-expanded="false" aria-controls="u'+id+'">Uitleg</button></div><div class="uitleg" id="u'+id+'">'+u.map(function(x){return '<p>'+x+'</p>'}).join('')+'</div>'}
+var PLAY='<span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>';
+function vidKaart(v){
+  return '<div class="ad story"><div class="tel"><div class="scherm"><div class="bovenbalk"><span class="av"></span><b>VENTOR®</b> · Gesponsord</div><button class="media" type="button" data-video="vid/'+v.f+'.mp4" aria-label="Video '+v.id+' groot afspelen"><img src="vid/'+v.f+'.jpg" alt="'+v.naam+'" loading="lazy">'+PLAY+'</button><div class="onderbalk"><em>'+v.knop+'</em></div></div></div><div class="onder"><strong>'+v.id+' · '+v.naam+'</strong>'+uitleg(v.uitleg,v.id)+'<p style="margin-top:10px;font-size:14px;color:var(--zacht)"><b style="color:var(--fg)">Tekst:</b> '+v.tekst+'<br><b style="color:var(--fg)">Kop:</b> '+v.kop+'</p></div>';
+}
+function adKaart(a){
+  var src='ads/ventor-column-'+a.id.toLowerCase()+'-'+fmt+'.jpg';
+  if(fmt==='st') return '<div class="ad story"><div class="tel"><div class="scherm"><div class="bovenbalk"><span class="av"></span><b>VENTOR®</b> · Gesponsord</div><button class="media" type="button" data-img="'+src+'" aria-label="'+a.id+' groot bekijken"><img src="'+src+'" alt="'+a.naam+'" loading="lazy"></button><div class="onderbalk"><em>'+a.knop+'</em></div></div></div><div class="onder"><strong>'+a.id+' · '+a.naam+'</strong>'+uitleg(a.uitleg,a.id)+'</div>';
+  return '<div class="ad"><div class="tel"><div class="scherm">'+kop()+'<p class="tekst">'+a.tekst+'</p><button class="media" type="button" data-img="'+src+'" aria-label="'+a.id+' groot bekijken"><img src="'+src+'" alt="'+a.naam+'" loading="lazy"></button>'+cta(a.kop,a.knop)+'</div></div><div class="onder"><strong>'+a.id+' · '+a.naam+'</strong>'+uitleg(a.uitleg,a.id)+'</div>';
+}
+function bouw(){document.getElementById('beelden').innerHTML=ADS.map(adKaart).join('');koppel(document.getElementById('beelden'))}
+document.getElementById('videos').innerHTML=VIDS.map(vidKaart).join('');
+function koppel(root){
+  root.querySelectorAll('.uitleg-knop').forEach(function(b){b.addEventListener('click',function(){var u=document.getElementById(b.getAttribute('aria-controls'));var o=u.classList.toggle('open');b.setAttribute('aria-expanded',o)})});
+  root.querySelectorAll('.media').forEach(function(m){m.addEventListener('click',function(){open(m)})});
+}
+var lb=document.getElementById('lb'), lbIn=document.getElementById('lbIn');
+function open(m){
+  if(m.dataset.video){lbIn.innerHTML='<video src="'+m.dataset.video+'" controls autoplay playsinline></video>';var v=lbIn.querySelector('video');v.muted=false;var p=v.play();if(p&&p.catch)p.catch(function(){})}
+  else lbIn.innerHTML='<img src="'+m.dataset.img+'" alt="">';
+  lb.hidden=false;document.getElementById('lbX').focus();
+}
+function dicht(){lb.hidden=true;lbIn.innerHTML=''}
+document.getElementById('lbX').addEventListener('click',dicht);
+lb.addEventListener('click',function(e){if(e.target===lb||e.target===lbIn)dicht()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!lb.hidden)dicht()});
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){fmt=b.dataset.fmt;document.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});bouw()})});
+koppel(document.getElementById('videos'));
+bouw();
+</script>
+</body>
+</html>
