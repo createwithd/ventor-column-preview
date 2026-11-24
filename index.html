@@ -59,34 +59,13 @@ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--lijn);vert
 </head>
 <body>
 <div class="wrap">
-  <h1>VENTOR® Column: Meta-ads Black Friday</h1>
-  <p class="lead">8 beeldads (feed 4:5 en story 9:16) en 2 video's. Klik op een advertentie om hem groot te zien, video's spelen dan met geluid. Bij elke ad legt "Uitleg" uit waarom hij zo is gemaakt. Elke ad start bij het product, met een hook uit de avatar van de Original: langer buiten zitten, tuin of terras, warmte en blikvanger. De korting staat er klein bij, niet als hoofdboodschap.</p>
-  <div class="links">
-    <a href="https://ventorfire.com/products/ventor-column-cortenstalen-buitenhaard">Live Column-pagina</a>
-    <a href="https://ventorfire.com/products/ventor-original-cortenstaal-220cm">Live Original-pagina</a>
-  </div>
-
-  <h2>Video's</h2>
-  <p class="lead">De complete productvideo met de oprichter draait al live. Daarnaast is er een korte Black Friday-video.</p>
-  <div class="grid" id="videos"></div>
-
-  <h2>Beeldads</h2>
+  <h1>VENTOR® Column · Meta-ads</h1>
   <div class="tabs" role="group" aria-label="Formaat">
     <button type="button" data-fmt="fd" aria-pressed="true">Feed (4:5)</button>
     <button type="button" data-fmt="st" aria-pressed="false">Story (9:16)</button>
   </div>
   <div class="grid" id="beelden"></div>
-
-  <h2>Opzet campagne</h2>
-  <p class="lead">Bij de Original verkochten in november vooral de video met de oprichter en de ad met het aanbod. Sfeer-ads kregen goedkope kliks, maar weinig aankopen. Daarom staan de productvideo en het aanbod voorop.</p>
-  <div class="tabel"><table>
-    <thead><tr><th>Advertentieset (ABO)</th><th>Doelgroep</th><th>Advertenties</th></tr></thead>
-    <tbody>
-      <tr><td>Column: productvideo (loopt al)</td><td>Zoals nu</td><td>Productvideo (V1)</td></tr>
-      <tr><td>Column: retargeting</td><td>Sitebezoekers en videokijkers 180 dagen, IG-volgers</td><td>B05, B06, B01, V2</td></tr>
-      <tr><td>Column: breed</td><td>NL, 35-65, Advantage+ doelgroep</td><td>B01, B02, B03, B04, B06, B07, B08, V2</td></tr>
-    </tbody>
-  </table></div>
+  <div class="grid" id="videos"></div>
 </div>
 
 <div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Groot bekijken">
@@ -118,7 +97,7 @@ function cta(k,b){return '<div class="cta"><span>'+LINK.toUpperCase()+'<b>'+k+'<
 function uitleg(u,id){return '<button class="uitleg-knop" type="button" aria-expanded="false" aria-controls="u'+id+'">Uitleg</button></div><div class="uitleg" id="u'+id+'">'+u.map(function(x){return '<p>'+x+'</p>'}).join('')+'</div>'}
 var PLAY='<span class="play"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>';
 function vidKaart(v){
-  return '<div class="ad story"><div class="tel"><div class="scherm"><div class="bovenbalk"><span class="av"></span><b>VENTOR®</b> · Gesponsord</div><button class="media" type="button" data-video="vid/'+v.f+'.mp4" aria-label="Video '+v.id+' groot afspelen"><img src="vid/'+v.f+'.jpg" alt="'+v.naam+'" loading="lazy">'+PLAY+'</button><div class="onderbalk"><em>'+v.knop+'</em></div></div></div><div class="onder"><strong>'+v.id+' · '+v.naam+'</strong>'+uitleg(v.uitleg,v.id)+'<p style="margin-top:10px;font-size:14px;color:var(--zacht)"><b style="color:var(--fg)">Tekst:</b> '+v.tekst+'<br><b style="color:var(--fg)">Kop:</b> '+v.kop+'</p></div>';
+  return '<div class="ad story"><div class="tel"><div class="scherm"><div class="bovenbalk"><span class="av"></span><b>VENTOR®</b> · Gesponsord</div><button class="media" type="button" data-video="vid/'+v.f+'.mp4" aria-label="Video '+v.id+' groot afspelen"><img src="vid/'+v.f+'.jpg" alt="'+v.naam+'" loading="lazy">'+PLAY+'</button><div class="onderbalk"><em>'+v.knop+'</em></div></div></div><div class="onder"><strong>'+v.id+' · '+v.naam+'</strong>'+uitleg(v.uitleg,v.id)+'</div>';
 }
 function adKaart(a){
   var src='ads/ventor-column-'+a.id.toLowerCase()+'-'+fmt+'.jpg';
